@@ -1,6 +1,15 @@
 {
-  "rewrites": [
-    { "source": "/api/get-token", "destination": "/api/get-token.js" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/get-token.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/get-token",
+      "dest": "api/get-token.js"
+    }
   ]
 }
-
