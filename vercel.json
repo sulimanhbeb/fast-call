@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/api/get-token", "destination": "/api/get-token.js" }
+  ]
+}
+
